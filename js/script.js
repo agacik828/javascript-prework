@@ -9,22 +9,22 @@ function clearMessages(){
 }
 
 
-var argButtonName, buttonTest;
+var argButtonName;
 
-var buttonTest;
+//*var buttonTest;
 var buttonRock;
 var buttonPaper;
-var buttonScissors;
+var buttonScissors;*//
 
-buttonTest = document.getElementById('button-test');
-buttonRock = document.getElementById('button-rock');
-buttonPapier = document.getElementById('button-papier');
-buttonScissors = document.getElementById('button-scissors');
+const buttonTest = document.getElementById('button-test');
+const buttonRock = document.getElementById('button-rock');
+const buttonPapier = document.getElementById('button-papier');
+const buttonScissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-}
+
 /**
  * Describe this function...
  */
@@ -68,8 +68,9 @@ computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
+}
 
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); })
-buttonRock.addEventListener('click', function(){ buttonClicked('Guzik KAMIEŃ'); })
-buttonPapier.addEventListener('click', function(){ buttonClicked('Guzik PAPIER'); })
-buttonScissors.addEventListener('click', function(){ buttonClicked('Guzik NOŻYCZKI'); })
+buttonTest.addEventListener('click', function(){ buttonClicked('button-test'); })
+buttonRock.addEventListener('click', function(){ buttonClicked(' button-rock'); })
+buttonPapier.addEventListener('click', function(){ buttonClicked('button-papier'); })
+buttonScissors.addEventListener('click', function(){ buttonClicked('button-scissors'); })
